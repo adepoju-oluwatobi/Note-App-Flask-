@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .site-title{
+    font-weight: bold;
+}
+header .navbar .nav-items{
+    display: flex;
+    gap: 10px;
+}
+header .navbar .nav-items a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+section.main{
+    padding: 10px;
+}
+.alert{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.error.alert{
+    background-color: rgb(229, 116, 116);
+}
+.success.alert{
+    background-color: rgb(119, 200, 119);
+}
+
+/* Style for the container div */
+note-container {
+    margin: 20px 20px;
+}
+
+/* Style for the Notes heading */
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for the list of notes */
+ul.note {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for individual note items */
+li.items {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style for the title of each note */
+strong.title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style for the text of each note */
+h6.note-text {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+.action{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.action a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 5px;
+    font-size: 13px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}

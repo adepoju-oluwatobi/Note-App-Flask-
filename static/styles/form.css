@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form .form-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+form input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+textarea#note {
+    width: 100%; /* Set the width to 100% of its container */
+    padding: 10px; /* Add padding to the text area */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
