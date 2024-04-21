@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 header{
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+.header{
     background-color: black;
     color: white;
     padding: 10px;
@@ -26,18 +31,33 @@ header .navbar .nav-items a{
 }
 section.main{
     padding: 10px;
+    width: 280px;
+    margin: 0 auto;
 }
-.alert{
+/* CSS to adjust content position when alert is displayed */
+.alert + .main {
+    margin-top: 20%; /* Adjust the margin-top value as needed */
+}
+
+.alert {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: opacity 1s ease; /* Apply transition effect to opacity */
+}
+
+/* Define initial opacity */
+.alert.hidden {
+    opacity: 0; /* Set initial opacity to 0 */
 }
 .error.alert{
-    background-color: rgb(229, 116, 116);
+    background-color: rgb(243, 178, 178);
+    color: rgb(154, 91, 91);
 }
 .success.alert{
-    background-color: rgb(119, 200, 119);
+    background-color: rgb(169, 255, 169);
+    color: rgb(73, 134, 73);
 }
 
 /* Style for the container div */
@@ -74,17 +94,18 @@ strong.title {
 
 /* Style for the text of each note */
 h6.note-text {
-    font-size: 16px;
     color: #666;
     margin-top: 5px;
+}
+.note .title{
+    text-transform:capitalize;
 }
 .action{
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
-.action a{
-    text-decoration: none;
+.action p{
     color: white;
     background: black;
     padding: 5px;
@@ -92,4 +113,11 @@ h6.note-text {
     width: 50px;
     text-align: center;
     border-radius: 10px;
+}
+.welcome-user{
+    text-align: center;
+    margin-top: 15%;
+}
+.user-name{
+    font-weight: bold;
 }
